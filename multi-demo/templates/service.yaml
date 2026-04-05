@@ -1,10 +1,12 @@
+---
+# Source: multi-demo/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}
+  name: multi-demo
 spec:
   selector:
-    app: {{ .Release.Name }}
+    app: multi-demo
   ports:
   - port: 80
     targetPort: 80

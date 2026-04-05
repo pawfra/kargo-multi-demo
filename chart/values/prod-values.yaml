@@ -1,5 +1,0 @@
-replicas: 2
-configVersion: "v1"
-featureFlag: "false"
-logLevel: "warn"
-maxConnections: "500"

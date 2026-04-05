@@ -1,0 +1,30 @@
+---
+# Source: multi-demo/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multi-demo
+  labels:
+    app: multi-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: multi-demo
+  template:
+    metadata:
+      labels:
+        app: multi-demo
+      annotations:
+        config-version: "v1"
+    spec:
+      containers:
+      - name: app
+        image: "public.ecr.aws/nginx/nginx:1.29.7"
+        ports:
+        - containerPort: 80
+        env:
+        - name: CONFIG_VERSION
+          value: "v1"
+        - name: FEATURE_FLAG
+          value: "true"
