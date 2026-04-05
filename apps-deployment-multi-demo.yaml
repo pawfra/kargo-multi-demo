@@ -15,7 +15,7 @@ spec:
       labels:
         app: multi-demo
       annotations:
-        config-version: "v1"
+        config-version: "v2"
     spec:
       containers:
       - name: app
@@ -24,6 +24,6 @@ spec:
         - containerPort: 80
         env:
         - name: CONFIG_VERSION
-          value: "v1"
+          value: "v2"
         - name: FEATURE_FLAG
           value: "true"

@@ -5,7 +5,7 @@ kind: ConfigMap
 metadata:
   name: multi-demo-config
 data:
-  config-version: "v1"
+  config-version: "v2"
   feature-flag: "true"
   log-level: "debug"
-  max-connections: "50"
+  max-connections: "75"
