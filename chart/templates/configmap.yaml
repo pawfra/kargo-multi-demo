@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: {{ .Release.Name }}-config
-data:
-  config-version: {{ .Values.configVersion | quote }}
-  feature-flag: {{ .Values.featureFlag | quote }}
-  log-level: {{ .Values.logLevel | quote }}
-  max-connections: {{ .Values.maxConnections | quote }}

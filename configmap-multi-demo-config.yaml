@@ -1,0 +1,11 @@
+---
+# Source: multi-demo/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: multi-demo-config
+data:
+  config-version: "v1"
+  feature-flag: "false"
+  log-level: "warn"
+  max-connections: "500"
