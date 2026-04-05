@@ -1,0 +1,9 @@
+image:
+  repository: public.ecr.aws/nginx/nginx
+  tag: "1.26.0"
+
+replicas: 1
+configVersion: "v1"
+featureFlag: "false"
+logLevel: "info"
+maxConnections: "100"
