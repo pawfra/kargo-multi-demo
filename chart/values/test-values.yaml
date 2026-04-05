@@ -1,5 +1,5 @@
 replicas: 1
-configVersion: "v1"
+configVersion: "v2"
 featureFlag: "true"
 logLevel: "debug"
-maxConnections: "50"
+maxConnections: "75"
